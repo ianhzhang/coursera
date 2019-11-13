@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_bc49000499044dc181584a627e14fbfc {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bc49000499044dc181584a627e14fbfc" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_bc49000499044dc181584a627e14fbfc = L.map(
+                                  'map_bc49000499044dc181584a627e14fbfc',
+                                  {center: [35.7803977,-78.6390989],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_dc7b4df834c044b7aa4252eaff56522d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+        
+    
+            var circle_marker_edee643dd6d2479ab086fa1316776083 = L.circleMarker(
+                [35.77806000000004,-78.63493999999997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_ecad5f02e93c48309ce700eba5503428 = L.popup({maxWidth: '300'});
+
+            
+                var html_e2f4ca25e11e4fceb4eb4cecaa1306c3 = $('<div id="html_e2f4ca25e11e4fceb4eb4cecaa1306c3" style="width: 100.0%; height: 100.0%;">1: Moore Square, Raleigh</div>')[0];
+                popup_ecad5f02e93c48309ce700eba5503428.setContent(html_e2f4ca25e11e4fceb4eb4cecaa1306c3);
+            
+
+            circle_marker_edee643dd6d2479ab086fa1316776083.bindPopup(popup_ecad5f02e93c48309ce700eba5503428);
+
+            
+        
+    
+            var circle_marker_05a3b387a1a346799c98eed543047583 = L.circleMarker(
+                [35.77622547401798,-78.63932254684069],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_2f9a9697814040c1aa776ffa9ea22eec = L.popup({maxWidth: '300'});
+
+            
+                var html_74832d5b4250476c8cf308db42d332f8 = $('<div id="html_74832d5b4250476c8cf308db42d332f8" style="width: 100.0%; height: 100.0%;">2: Fayetteville Street, Raleigh</div>')[0];
+                popup_2f9a9697814040c1aa776ffa9ea22eec.setContent(html_74832d5b4250476c8cf308db42d332f8);
+            
+
+            circle_marker_05a3b387a1a346799c98eed543047583.bindPopup(popup_2f9a9697814040c1aa776ffa9ea22eec);
+
+            
+        
+    
+            var circle_marker_bdb38612fdea48f6939fd8a3cc491127 = L.circleMarker(
+                [35.78030036590053,-78.64762740151832],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_d0d6954e2ce04075acc55f859bb56971 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2869eb0d50440f6b19a143e7925899c = $('<div id="html_f2869eb0d50440f6b19a143e7925899c" style="width: 100.0%; height: 100.0%;">3: Glenwood South, Raleigh</div>')[0];
+                popup_d0d6954e2ce04075acc55f859bb56971.setContent(html_f2869eb0d50440f6b19a143e7925899c);
+            
+
+            circle_marker_bdb38612fdea48f6939fd8a3cc491127.bindPopup(popup_d0d6954e2ce04075acc55f859bb56971);
+
+            
+        
+    
+            var circle_marker_b7250b63197e453b840f2ecf04fee776 = L.circleMarker(
+                [35.787788,-78.66272],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_095893a56a864b8db682f40a3561be96 = L.popup({maxWidth: '300'});
+
+            
+                var html_11835f704e184f508ec120bc86534244 = $('<div id="html_11835f704e184f508ec120bc86534244" style="width: 100.0%; height: 100.0%;">4: West Raleigh Historic District, Raleigh</div>')[0];
+                popup_095893a56a864b8db682f40a3561be96.setContent(html_11835f704e184f508ec120bc86534244);
+            
+
+            circle_marker_b7250b63197e453b840f2ecf04fee776.bindPopup(popup_095893a56a864b8db682f40a3561be96);
+
+            
+        
+    
+            var circle_marker_019aafa6feaa47f6b8b6e5903009f60b = L.circleMarker(
+                [35.78748026987279,-78.66313199999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "pink",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "pink",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_b570d54762f545c2a8776bb690a70239 = L.popup({maxWidth: '300'});
+
+            
+                var html_d918d22c001142ca873643fbf32f6c7e = $('<div id="html_d918d22c001142ca873643fbf32f6c7e" style="width: 100.0%; height: 100.0%;">5: Maiden Lane, Raleigh</div>')[0];
+                popup_b570d54762f545c2a8776bb690a70239.setContent(html_d918d22c001142ca873643fbf32f6c7e);
+            
+
+            circle_marker_019aafa6feaa47f6b8b6e5903009f60b.bindPopup(popup_b570d54762f545c2a8776bb690a70239);
+
+            
+        
+    
+            var circle_marker_025f12afddfe454bbb83921dc83c9086 = L.circleMarker(
+                [35.775812,-78.64536600000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "teal",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "teal",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_57e46bf4bd434197b72dfe3d5568083c = L.popup({maxWidth: '300'});
+
+            
+                var html_0fe791b143f54ecfb0a0514b324c6fce = $('<div id="html_0fe791b143f54ecfb0a0514b324c6fce" style="width: 100.0%; height: 100.0%;">6: Warehouse District, Raleigh</div>')[0];
+                popup_57e46bf4bd434197b72dfe3d5568083c.setContent(html_0fe791b143f54ecfb0a0514b324c6fce);
+            
+
+            circle_marker_025f12afddfe454bbb83921dc83c9086.bindPopup(popup_57e46bf4bd434197b72dfe3d5568083c);
+
+            
+        
+    
+            var circle_marker_2cb5cb3ba4ec477bb3dff27d0ed15129 = L.circleMarker(
+                [35.838238306610776,-78.6802436002455],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_3a8ec206d2074e3a9f6e1d4e53b231b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca58b6d6064a4e0692166e2f582e8edc = $('<div id="html_ca58b6d6064a4e0692166e2f582e8edc" style="width: 100.0%; height: 100.0%;">7: Crabtree Valley, Raleigh</div>')[0];
+                popup_3a8ec206d2074e3a9f6e1d4e53b231b0.setContent(html_ca58b6d6064a4e0692166e2f582e8edc);
+            
+
+            circle_marker_2cb5cb3ba4ec477bb3dff27d0ed15129.bindPopup(popup_3a8ec206d2074e3a9f6e1d4e53b231b0);
+
+            
+        
+    
+            var circle_marker_d86f305c11b640eaa25ec82141e3381e = L.circleMarker(
+                [35.785510000000045,-78.64266999999995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_406649d482db429d83758a2bf7652031 = L.popup({maxWidth: '300'});
+
+            
+                var html_947063ec66d44061b8a7541e3d87d8a4 = $('<div id="html_947063ec66d44061b8a7541e3d87d8a4" style="width: 100.0%; height: 100.0%;">8: State Government District, Raleigh</div>')[0];
+                popup_406649d482db429d83758a2bf7652031.setContent(html_947063ec66d44061b8a7541e3d87d8a4);
+            
+
+            circle_marker_d86f305c11b640eaa25ec82141e3381e.bindPopup(popup_406649d482db429d83758a2bf7652031);
+
+            
+        
+    
+            var circle_marker_84ea460e71ef4769979a43e48ffdbda3 = L.circleMarker(
+                [35.785510000000045,-78.64266999999995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "fuchsia",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "fuchsia",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_4ea50e988e2f4160a8a8109bd0354b2e = L.popup({maxWidth: '300'});
+
+            
+                var html_8f8d1234c995496ab8cbdb180ec556a4 = $('<div id="html_8f8d1234c995496ab8cbdb180ec556a4" style="width: 100.0%; height: 100.0%;">9: Depot District, Raleigh</div>')[0];
+                popup_4ea50e988e2f4160a8a8109bd0354b2e.setContent(html_8f8d1234c995496ab8cbdb180ec556a4);
+            
+
+            circle_marker_84ea460e71ef4769979a43e48ffdbda3.bindPopup(popup_4ea50e988e2f4160a8a8109bd0354b2e);
+
+            
+        
+    
+            var circle_marker_39e05d14fddd405bae561ee6ae437baa = L.circleMarker(
+                [35.785510000000045,-78.64266999999995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "lime",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "lime",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bc49000499044dc181584a627e14fbfc);
+            
+    
+            var popup_a94945e396d04a28b456519c4bbb6066 = L.popup({maxWidth: '300'});
+
+            
+                var html_67a5f819421142808918d1efc9cd8c51 = $('<div id="html_67a5f819421142808918d1efc9cd8c51" style="width: 100.0%; height: 100.0%;">10: Vanguard Park, Raleigh</div>')[0];
+                popup_a94945e396d04a28b456519c4bbb6066.setContent(html_67a5f819421142808918d1efc9cd8c51);
+            
+
+            circle_marker_39e05d14fddd405bae561ee6ae437baa.bindPopup(popup_a94945e396d04a28b456519c4bbb6066);
+
+            
+        
+</script>
