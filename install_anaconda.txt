@@ -1,0 +1,7 @@
+https://towardsdatascience.com/installing-keras-tensorflow-using-anaconda-for-machine-learning-44ab28ff39cb
+
+conda install -c anaconda keras
+
+Install pytorch
+https://www.liquidweb.com/kb/how-to-install-pytorch-on-ubuntu/
+conda install pytorch torchvision cpuonly -c pytorch
